@@ -15,27 +15,25 @@
 5. [Neuron Interpretability](#neuron-interpretability)
 6. [Performance Optimization for GPUs and TPUs](#performance-optimizations-for-gpus-and-tpus)
 7. [Conclusion](#conclusion)
+---
 
 ## Project Proposal
-This project involves three main objectives: 
-give breif overview of all stuff
-1. **Learning Jax**
-3. **Reimplementing an Existing Deep Learning Project**  
-   2. **Using COCO Dataset**  
-         - extracted using tensorflow-datasets  
-4. **Neuron Interpretability**  
-5. **Model Customization and Retraining**  
-6. **Performance optimization for GPUs and TPUs**
-7. **Conclusion**
+Many modern machine learning models demand substantial computational resources and efficient implementation to achieve peak performance. Moreover, retraining these models on new datasets often requires significant time and effort. In this project, I will explore and implement [JAX](https://github.com/jax-ml/jax), a machine learning library that leverages the 'XLA' (Accelerated Linear Algebra) compiler to optimize performance for GPUs and TPUs, providing robust backend and hardware integration.
+
+Building on this knowledge, I will re-create a [previous machine learning model I contributed to](https://github.com/YCCS-Summer-2023-DLCV/Deep-Learning-in-Computer-Vision), initially trained on the [COCO Dataset](https://cocodataset.org/#home), this time using a large database of vehicle images. Additionally, I aim to deepen my understanding of the model’s internal structure by studying the relationships between nodes, focusing on "neuron interpretability" to better explain its decision-making processes.
+
+Lastly, I plan to use the [Penzai](https://github.com/google-deepmind/penzai) framework to make the model adaptable to entirely new datasets without prior training. This will reduce training time, lower computational costs, and enhance the model's adaptability to a wider range of datasets and applications.
+
 ---
 ### Learning Jax
 #### Why Jax?
-   - supports optimizations for gpu/tpu high performance
-   - good for hardware implementation  
-   - easy to write, functional programming style  
-   - composition of jax functions are easy, style makes it avoids global state  
-   - intermediate language XLA
-   - works well with backend implementation
+- Optimized for high-performance GPU/TPU usage
+- Well-suited for hardware integration
+- Functional programming style for concise and readable code
+- Easy composition of JAX functions
+- Avoids global state due to functional design
+- Uses the XLA (Accelerated Linear Algebra) intermediate language
+- Seamlessly integrates with backend systems
 #### Materials Used
 TODO
 
